@@ -5,7 +5,7 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-sylviolima-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/sylviolima)
 [![Email](https://img.shields.io/badge/Email-dmsylvio@gmail.com-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:dmsylvio@gmail.com)
-[![Location](https://img.shields.io/badge/Tampa,_FL-USA-lightgrey?style=flat&logo=googlemaps&logoColor=white)](#)
+[![Location](https://img.shields.io/badge/Zephyrhills,_FL-USA-lightgrey?style=flat&logo=googlemaps&logoColor=white)](#)
 
 </div>
 
@@ -39,7 +39,7 @@ A full-featured business workflow platform built for small teams. Serving **200+
 ---
 
 ### [Every Party Decor](https://everypartydecor.com) — Full-Stack Business Platform
-> *Party decor and event supplies — Florida, USA*
+> *Party decor and event supplies — Everett, Massachusetts*
 
 Full-stack web application for a Florida-based event decoration business. Built with a decoupled architecture — REST API backend and a React SPA frontend — covering the full customer and admin experience.
 
