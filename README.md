@@ -54,12 +54,15 @@ End-to-end website for a local Florida business, handling product presentation, 
 ### [Brasília Estágios](https://brasiliaestagios.com.br) — Job Board Platform
 > *Internship and employment portal — Brasília, Brazil · 8,000+ active listings*
 
-A full-stack job board connecting students with companies across the Brasília metro area.
+A full-stack job board connecting students with companies across the Brasília metro area. Originally built in PHP/Yii2, currently being rebuilt as a modern web + mobile product.
 
 - Multi-role platform (students, companies, admins) with authentication and profile management
 - Job listing engine with search, filtering, and application tracking
 - Integration with institutional partners (universities and technical schools)
-- Stack: `PHP` · `Yii2` · `PostgreSQL` · `JavaScript`
+- **v2 (in progress):** full rewrite using Next.js, tRPC, and Auth.js — same stack as Orgaflow
+- **Mobile app** built with React Native (Expo) for students on the go
+- Stack (v1): `PHP` · `Yii2` · `PostgreSQL` · `JavaScript`
+- Stack (v2): `Next.js` · `tRPC` · `Auth.js` · `PostgreSQL` · `React Native` · `Expo`
 - 📌 *Private repository — live at [brasiliaestagios.com.br](https://brasiliaestagios.com.br)*
 
 ---
@@ -69,8 +72,8 @@ A full-stack job board connecting students with companies across the Brasília m
 **Languages**
 `TypeScript` · `JavaScript` · `PHP` · `SQL`
 
-**Frontend**
-`React` · `Next.js` · `Tailwind CSS` · `Zod`
+**Frontend & Mobile**
+`React` · `Next.js` · `React Native` · `Expo` · `Tailwind CSS` · `Zod`
 
 **Backend**
 `Node.js` · `Express.js` · `tRPC` · `Yii2`
