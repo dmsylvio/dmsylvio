@@ -5,7 +5,7 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-sylviolima-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/sylviolima)
 [![Email](https://img.shields.io/badge/Email-dmsylvio@gmail.com-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:dmsylvio@gmail.com)
-[![Location](https://img.shields.io/badge/Tampa,_FL-USA-lightgrey?style=flat&logo=googlemaps&logoColor=white)](#)
+[![Location](https://img.shields.io/badge/Zephyrhills,_FL-USA-lightgrey?style=flat&logo=googlemaps&logoColor=white)](#)
 
 </div>
 
@@ -38,15 +38,17 @@ A full-featured business workflow platform built for small teams. Serving **200+
 
 ---
 
-### [Every Party Decor](https://everypartydecor.com) — E-commerce & Business Website
+### [Every Party Decor](https://everypartydecor.com) — Full-Stack Business Platform
 > *Party decor and event supplies — Florida, USA*
 
-End-to-end website for a local Florida business, handling product presentation, booking flow, and online presence.
+Full-stack web application for a Florida-based event decoration business. Built with a decoupled architecture — REST API backend and a React SPA frontend — covering the full customer and admin experience.
 
-- Custom WordPress development with performance optimization
-- DNS, SSL, hosting, CDN, and deployment configuration
-- Analytics (GA4 + GTM), payment gateway integration, and marketing tools
-- Stack: `WordPress` · `PHP` · `JavaScript` · `GA4` · `GTM`
+- **REST API** built with Fastify — product catalog, booking system, and payment processing
+- **React + Vite** frontend with service catalog, scheduling, and checkout flow
+- **JWT authentication** with protected admin panel for inventory and booking management
+- **Stripe integration** for online payments
+- **Admin dashboard** for managing products, services, orders, and appointments
+- Stack: `React` · `Vite` · `Fastify` · `Node.js` · `JWT` · `Stripe` · `TypeScript`
 - 📌 *Private repository — live at [everypartydecor.com](https://everypartydecor.com)*
 
 ---
