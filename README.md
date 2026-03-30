@@ -5,7 +5,7 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-sylviolima-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/sylviolima)
 [![Email](https://img.shields.io/badge/Email-dmsylvio@gmail.com-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:dmsylvio@gmail.com)
-[![Location](https://img.shields.io/badge/Zephyrhills,_FL-USA-lightgrey?style=flat&logo=googlemaps&logoColor=white)](#)
+[![Location](https://img.shields.io/badge/Tampa,_FL-USA-lightgrey?style=flat&logo=googlemaps&logoColor=white)](#)
 
 </div>
 
