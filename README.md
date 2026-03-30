@@ -1,16 +1,109 @@
-## Hi there 👋
+<div align="center">
 
-<!--
-**dmsylvio/dmsylvio** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+# Hi, I'm Sylvio Lima 👋
+### Full-Stack Software Engineer · Florida, USA
 
-Here are some ideas to get you started:
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-sylviolima-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/sylviolima)
+[![Email](https://img.shields.io/badge/Email-dmsylvio@gmail.com-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:dmsylvio@gmail.com)
+[![Location](https://img.shields.io/badge/Zephyrhills,_FL-USA-lightgrey?style=flat&logo=googlemaps&logoColor=white)](#)
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+</div>
+
+---
+
+## About Me
+
+I'm a full-stack developer with 10+ years of experience building web products — from enterprise government systems to SaaS platforms and client-facing websites. I specialize in **TypeScript**, **React/Next.js**, **Node.js**, and **PostgreSQL**, and I take pride in shipping things that actually work in production.
+
+Currently completing the **Springboard Software Development Career Program** (Amazon Career Choice sponsored) and building [Orgaflow](https://orgaflow.dev) — a multi-tenant SaaS for small business workflows — from zero to public beta.
+
+I care about clean architecture, real documentation, and products that solve real problems.
+
+---
+
+## 🚀 Live Projects
+
+### [Orgaflow](https://orgaflow.dev) — Multi-tenant SaaS Platform
+> *Estimates · Invoices · Payments · CRM · Automations · Kanban*
+
+A full-featured business workflow platform built for small teams. Serving **200+ businesses** in public beta with **98.9% uptime**.
+
+- **Multi-tenant architecture** with organization-scoped access and full RBAC/IAM
+- **Stripe Connect** integration for online payments (subscription billing + per-invoice collection)
+- **Automation engine** — trigger task creation on invoice paid, estimate approved, and more
+- **Visual Kanban** board linked to business events
+- **tRPC** typed API end-to-end, **Drizzle ORM** + PostgreSQL, **Auth.js** authentication
+- Stack: `Next.js` · `tRPC` · `Drizzle ORM` · `PostgreSQL` · `Auth.js` · `Tailwind CSS` · `Stripe` · `Zod`
+- 📌 *Private repository — production app live at [orgaflow.dev](https://orgaflow.dev)*
+
+---
+
+### [Every Party Decor](https://everypartydecor.com) — E-commerce & Business Website
+> *Party decor and event supplies — Florida, USA*
+
+End-to-end website for a local Florida business, handling product presentation, booking flow, and online presence.
+
+- Custom WordPress development with performance optimization
+- DNS, SSL, hosting, CDN, and deployment configuration
+- Analytics (GA4 + GTM), payment gateway integration, and marketing tools
+- Stack: `WordPress` · `PHP` · `JavaScript` · `GA4` · `GTM`
+- 📌 *Private repository — live at [everypartydecor.com](https://everypartydecor.com)*
+
+---
+
+### [Brasília Estágios](https://brasiliaestagios.com.br) — Job Board Platform
+> *Internship and employment portal — Brasília, Brazil · 8,000+ active listings*
+
+A full-stack job board connecting students with companies across the Brasília metro area.
+
+- Multi-role platform (students, companies, admins) with authentication and profile management
+- Job listing engine with search, filtering, and application tracking
+- Integration with institutional partners (universities and technical schools)
+- Stack: `PHP` · `Yii2` · `PostgreSQL` · `JavaScript`
+- 📌 *Private repository — live at [brasiliaestagios.com.br](https://brasiliaestagios.com.br)*
+
+---
+
+## 🛠️ Tech Stack
+
+**Languages**
+`TypeScript` · `JavaScript` · `PHP` · `SQL`
+
+**Frontend**
+`React` · `Next.js` · `Tailwind CSS` · `Zod`
+
+**Backend**
+`Node.js` · `Express.js` · `tRPC` · `Yii2`
+
+**Databases**
+`PostgreSQL` · `MySQL` · `Drizzle ORM`
+
+**Infrastructure & Auth**
+`DNS` · `SSL` · `CDN` · `Auth.js` · `LDAP/SSO` · `Stripe`
+
+**Tools**
+`Git` · `Linux` · `Docker` · `Biome` · `pnpm`
+
+---
+
+## 📋 Professional Experience Highlights
+
+- **Full-Stack Developer @ INMET** (Brazilian National Weather Service) — legacy system modernization, React/Next.js adoption, PostgreSQL optimization, LDAP SSO implementation
+- **WordPress Developer @ Switch Design Team** (Peabody, MA) — end-to-end client site delivery, CDN/performance optimization, staging-to-production workflows
+- **Full-Stack Developer @ Boa Imagem** — PHP SaaS platforms, third-party API integrations, full-lifecycle client project ownership
+
+---
+
+## 📚 Currently
+
+- 🎓 Completing **Springboard Software Development Career Program** (Expected May 2026)
+- 🏗️ Building new features for [Orgaflow](https://orgaflow.dev) — automations, reports, public API
+- ☁️ AWS Certified: EC2 for Windows Instances (Sept 2025)
+
+---
+
+<div align="center">
+
+*"Ship things. Document them. Make them work."*
+
+</div>
