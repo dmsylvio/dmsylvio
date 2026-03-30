@@ -24,47 +24,53 @@ I care about clean architecture, real documentation, and products that solve rea
 ## 🚀 Live Projects
 
 ### [Orgaflow](https://orgaflow.dev) — Multi-tenant SaaS Platform
-> *Estimates · Invoices · Payments · CRM · Automations · Kanban*
+> *Customers · Estimates · Invoices · Payments · Automations · Kanban*
 
 A full-featured business workflow platform built for small teams. Serving **200+ businesses** in public beta with **98.9% uptime**.
 
-- **Multi-tenant architecture** with organization-scoped access and full RBAC/IAM
-- **Stripe Connect** integration for online payments (subscription billing + per-invoice collection)
-- **Automation engine** — trigger task creation on invoice paid, estimate approved, and more
-- **Visual Kanban** board linked to business events
-- **tRPC** typed API end-to-end, **Drizzle ORM** + PostgreSQL, **Auth.js** authentication
-- Stack: `Next.js` · `tRPC` · `Drizzle ORM` · `PostgreSQL` · `Auth.js` · `Tailwind CSS` · `Stripe` · `Zod`
+- **Multi-tenant architecture** — each user can belong to multiple organizations; all actions are org-scoped via `x-organization-id` header or cookie
+- **Full RBAC/IAM** — owner bypass, role-based `resource:action` permissions with automatic dependency expansion
+- **Type-safe API** with tRPC v11 + Zod + SuperJSON, integrated with TanStack React Query
+- **Public client portal** — shareable estimate/invoice links with approve/reject flow, PDF download, and attachment previews
+- **File storage** with Vercel Blob + DB-backed file catalog with per-document visibility controls
+- **Automation engine** — connect domain events (estimate approved, invoice paid) to automatic task creation
+- **Stripe subscriptions** with plan-based feature gating server-side
+- **PDF generation** server-side with `@react-pdf/renderer` for estimates and invoices
+- Stack: `Next.js 16` · `React 19` · `tRPC v11` · `Drizzle ORM` · `PostgreSQL` · `Auth.js` · `Stripe` · `Vercel Blob` · `Resend` · `Zod` · `Tailwind CSS`
 - 📌 *Private repository — production app live at [orgaflow.dev](https://orgaflow.dev)*
 
 ---
 
-### [Every Party Decor](https://everypartydecor.com) — Full-Stack Business Platform
-> *Party decor and event supplies — Everett, Massachusetts*
+### [Every Party Decor](https://everypartydecor.com) — Full-Stack Rental Management Platform
+> *Party rental & decor operations — Everett, Massachusetts*
 
-Full-stack web application for a Florida-based event decoration business. Built with a decoupled architecture — REST API backend and a React SPA frontend — covering the full customer and admin experience.
+Full-stack platform replacing a legacy PHP/MySQL/Yii2 system. Decoupled architecture with a Fastify REST API and a React SPA, covering the complete rental business lifecycle.
 
-- **REST API** built with Fastify — product catalog, booking system, and payment processing
-- **React + Vite** frontend with service catalog, scheduling, and checkout flow
-- **JWT authentication** with protected admin panel for inventory and booking management
-- **Stripe integration** for online payments
-- **Admin dashboard** for managing products, services, orders, and appointments
-- Stack: `React` · `Vite` · `Fastify` · `Node.js` · `JWT` · `Stripe` · `TypeScript`
+- **Fastify 5 REST API** with OpenAPI docs (Scalar UI) at [api.everypartydecor.com/docs](https://api.everypartydecor.com/docs)
+- **React 19 + Vite** SPA with protected back-office (`/app`) and public-facing estimate/invoice pages
+- **Period-based stock control** — prevents overbooking across overlapping rental date ranges; only confirmed invoices reserve inventory
+- **Full rental workflow** — customers, rental items, categories, estimates (quotes), invoices, payments, expenses, and contracts
+- **JWT authentication** + bcryptjs password hashing, with guest-only and protected route separation
+- **PDF generation** (pdf-lib) + email delivery (Resend) for estimates and invoices
+- **TanStack Query** + React Hook Form + Zod for type-safe data fetching and form validation
+- Stack: `Fastify 5` · `React 19` · `Vite` · `TypeScript` · `PostgreSQL` · `Drizzle ORM` · `JWT` · `Zod` · `Tailwind CSS`
 - 📌 *Private repository — live at [everypartydecor.com](https://everypartydecor.com)*
 
 ---
 
-### [Brasília Estágios](https://brasiliaestagios.com.br) — Job Board Platform
-> *Internship and employment portal — Brasília, Brazil · 8,000+ active listings*
+### [Brasília Estágios](https://brasiliaestagios.com.br) — Internship Platform
+> *Connecting students, companies & institutions — Brasília, Brazil · 8,000+ active listings*
 
-A full-stack job board connecting students with companies across the Brasília metro area. Originally built in PHP/Yii2, currently being rebuilt as a modern web + mobile product.
+Full platform for managing the internship lifecycle in Brazil's Federal District. Originally built in PHP/Yii2; currently being rebuilt from scratch (v2) with a modern type-safe stack designed to also support a mobile client.
 
-- Multi-role platform (students, companies, admins) with authentication and profile management
-- Job listing engine with search, filtering, and application tracking
-- Integration with institutional partners (universities and technical schools)
-- **v2 (in progress):** full rewrite using Next.js, tRPC, and Auth.js — same stack as Orgaflow
-- **Mobile app** built with React Native (Expo) for students on the go
+- **Four-role system** — students, companies, institutions, and admins, each with scoped access enforced client and server-side
+- **Auth flows** — sign up with role selection, sign in, forgot-password (6-digit code), and password reset
+- **Type-safe API** with tRPC v11 + TanStack Query; same API contract will be consumed by the mobile app
+- **Full domain schema** in Drizzle ORM — internship opportunities, agreement requests, commitment terms, representatives, supervisors, and more
+- **Centralized Zod validation** shared between server procedures and UI forms, with errors surfaced via tRPC's `errorFormatter`
+- **Mobile app** in React Native (Expo) planned to consume the same tRPC API
 - Stack (v1): `PHP` · `Yii2` · `PostgreSQL` · `JavaScript`
-- Stack (v2): `Next.js` · `tRPC` · `Auth.js` · `PostgreSQL` · `React Native` · `Expo`
+- Stack (v2): `Next.js 16` · `React 19` · `tRPC v11` · `Auth.js` · `PostgreSQL` · `Drizzle ORM` · `Zod` · `Tailwind CSS` · `shadcn/ui` · `React Native` · `Expo`
 - 📌 *Private repository — live at [brasiliaestagios.com.br](https://brasiliaestagios.com.br)*
 
 ---
